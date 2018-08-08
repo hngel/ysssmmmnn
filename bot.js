@@ -81,7 +81,7 @@ client.on('message', function(message) {
                         .addField('تمت إضافةالاغنيه بقائمة الإنتظار', `**
                           ${videoInfo.title}
                           **`)
-                        .setColor("#9a21df")
+                        .setColor("#c9688d")
                         .setFooter('|| ' + message.author.tag)
                         .setThumbnail(videoInfo.thumbnailUrl)
                     message.channel.sendEmbed(play_info);
@@ -103,7 +103,7 @@ client.on('message', function(message) {
                         .setAuthor(client.user.username, client.user.avatarURL)
                         .addField('__**تم التشغيل ✅**__', `**${videoInfo.title}
                               **`)
-                        .setColor("#9a21df")
+                        .setColor("#c9688d")
                         .addField(`بواسطه`, message.author.username)
                         .setThumbnail(videoInfo.thumbnailUrl)
 
@@ -162,7 +162,7 @@ client.on('message', function(message) {
             .addField('تمت إضافةالاغنيه بقائمة الإنتظار', `**
                   ${videoInfo.title}
                   **`)
-            .setColor("#9a21df")
+            .setColor("#c9688d")
             .setFooter('طلب بواسطة: ' + message.author.tag)
             .setThumbnail(videoInfo.thumbnailUrl)
         //.setDescription('?')
