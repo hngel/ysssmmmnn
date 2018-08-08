@@ -67,6 +67,7 @@ client.on('message', function(message) {
             let play_info = new Discord.RichEmbed()
                 .setAuthor(client.user.username, client.user.avatarURL)
                 .setFooter('طلب بواسطة: ' + message.author.tag)
+.setColor("#c9688d")
                 .setDescription('**قم بإدراج رابط او اسم الأغنيه**')
             message.channel.sendEmbed(play_info)
             return;
