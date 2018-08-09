@@ -9,6 +9,8 @@ const fetchVideoInfo = require('youtube-info');
 
 const yt_api_key = "AIzaSyDeoIH0u1e72AtfpwSKKOSy3IPp2UHzqi4";
 const prefix = 'c';
+const discord_token = "BOT_TOKEN";
+client.login(process.env.BOT_TOKEN);
 
 client.on('ready', function() {
     console.log(`i am ready ${client.user.username}`);
@@ -67,8 +69,8 @@ client.on('message', function(message) {
             let play_info = new Discord.RichEmbed()
                 .setAuthor(client.user.username, client.user.avatarURL)
                 .setFooter('طلب بواسطة: ' + message.author.tag)
-.setColor("#c9688d")
                 .setDescription('**قم بإدراج رابط او اسم الأغنيه**')
+                       .setColor("#c9688d")
             message.channel.sendEmbed(play_info)
             return;
         }
@@ -311,5 +313,23 @@ BOT.By sircorgi#6227🍫
    }
    }); 
    
-	client.login(process.env.BOT_TOKEN);
- 
+	  client.on("message", (message) => {
+  if (message.content.startsWith(".")) {
+    message.channel.send("لبى الي ينقط ينآسس");
+  }
+});
+client.on("message", (message) => {
+  if (message.content.startsWith("السلام عليكم")) {
+    message.channel.send("وعليكم السلام ورحمة الله وبركاته");
+  }
+});
+client.on("message", (message) => {
+  if (message.content.startsWith("هاي")) {
+    message.channel.send("هآيآت");
+  }
+});
+client.on("message", (message) => {
+  if (message.content.startsWith("ياسمين")) {
+    message.channel.send("سين صاد الحلوه م تنصاد هه");
+  }
+});
